@@ -9,5 +9,9 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(109, 61, 61);
+  font-size: 1.6rem;
+  background-color: mintcream;
+}
+
+.nav {
 }
