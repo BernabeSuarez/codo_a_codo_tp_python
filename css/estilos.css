@@ -9,6 +9,7 @@
 
 main {
   display: flex;
+  flex direction: column;
 }
 
 body {
@@ -48,9 +49,12 @@ nav ul li a {
   text-align: right;
   text-decoration: none;
 }
-article,
+article{
+  flex: 1;
+}
 section {
   flex: 1;
+  order: initial;
 }
 
 .bienvenida {
@@ -64,6 +68,7 @@ section {
 .sugerencias {
   font-size: 0.7rem;
   background-color: chocolate;
+  color: whitesmoke;
   padding: 1rem;
   border: solid 0.3rem lightsalmon;
   border-radius: 0.5rem;
@@ -78,4 +83,7 @@ section {
 footer {
   background-color: chocolate;
   text-align: center;
+  padding: 1rem;
+  border: solid 0.5rem lightsalmon;
+  border-radius: 0.5rem;
 }
