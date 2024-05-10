@@ -9,7 +9,6 @@
 
 main {
   display: flex;
-  flex direction: column;
 }
 
 body {
@@ -49,7 +48,7 @@ nav ul li a {
   text-align: right;
   text-decoration: none;
 }
-article{
+article {
   flex: 1;
 }
 section {
