@@ -7,6 +7,10 @@
   font-family: montserrat, sans-serif;
 }
 
+main {
+  display: flex;
+}
+
 body {
   font-size: 1rem;
   text-align: center;
@@ -18,7 +22,6 @@ body {
   background-color: saddlebrown;
 }
 .logo img {
-  background-color: saddlebrown;
   height: 5rem;
   width: auto;
 }
@@ -28,19 +31,32 @@ body {
   color: whitesmoke;
   text-align: center;
 }
-.menusuperior {
-  background-color: saddlebrown;
+nav {
+  background-color: rgb(227, 99, 8);
+  padding: 1rem;
+  border: solid 0.5rem lightsalmon;
+  border-radius: 0.5rem;
+}
+nav ul li {
+  display: inline; /* Aplicar display: inline; al elemento li */
+  margin: 1rem;
+}
+
+nav ul li a {
   color: whitesmoke;
-  text-decoration: none;
   font-size: 1rem;
   text-align: right;
-  padding: 0.5rem;
+  text-decoration: none;
+}
+article,
+section {
+  flex: 1;
 }
 
 .bienvenida {
   text-align: center;
   font-size: 2.5rem;
-  padding: 0.5rem;
+  padding: 2rem;
   border: solid 0.5rem lightsalmon;
   border-radius: 2rem;
 }
@@ -48,15 +64,14 @@ body {
 .sugerencias {
   font-size: 0.7rem;
   background-color: chocolate;
-  padding: 2rem;
-  border: solid 0.5rem lightsalmon;
-  border-radius: 1rem;
-  line-height: 1rem;
-  width: 10%;
+  padding: 1rem;
+  border: solid 0.3rem lightsalmon;
+  border-radius: 0.5rem;
   float: right;
+  width: 25%;
 }
 .sugerencias img {
-  width: 80%;
+  width: 50%;
   height: auto;
 }
 
