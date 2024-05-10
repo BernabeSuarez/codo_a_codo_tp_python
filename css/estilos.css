@@ -10,8 +10,36 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
+  text-align: center;
   background-color: mintcream;
 }
 
-.nav {
+header {
+  background-color: chocolate;
+}
+nav {
+  text-align: right;
+}
+#logo img {
+  height: 5rem;
+  width: auto;
+}
+
+.libre_de_tacc {
+  background-color: chocolate;
+  padding: 2rem;
+  border: solid 0.5rem saddlebrown;
+  border-radius: 2rem;
+  line-height: 2rem;
+  width: 30%;
+  float: right;
+}
+.libre_de_tacc img {
+  width: 80%;
+  height: auto;
+}
+
+footer {
+  background-color: chocolate;
+  text-align: center;
 }
