@@ -1,94 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: montserrat, sans-serif;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   text-align: center;
+  line-height: 1.5;
   background-color: mintcream;
   color: black;
 }
 
-header {
-  background-color: saddlebrown;
-}
-.logo img {
-  height: 5rem;
-  width: auto;
-}
-
-.titulo {
-  flex-direction: row;
-  justify-content: center;
-  font-size: 2.5rem;
-  color: whitesmoke;
-}
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgb(227, 99, 8);
-  padding: 1rem;
-  border: solid 0.5rem lightsalmon;
-  border-radius: 0.5rem;
-}
-nav ul li {
-  display: inline; /* Aplicar display: inline; al elemento li */
-  margin: 1rem;
-}
-
-nav ul li a {
-  color: whitesmoke;
-  font-size: 1rem;
-  text-align: right;
+a {
   text-decoration: none;
-  padding: 1rem;
+  color: whitesmoke;
 }
 
-article {
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: saddlebrown;
+  padding: 1.5rem;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .menu-principal ul {
+  display: flex;
+}
+
+.navbar img {
+  max-width: 100px;
+}
+
+.navbar .titulo {
+  font-family: "Mulish", sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 600;
+  color: whitesmoke;
+  margin-right: 15rem;
+}
+
+.navbar ul li a {
+  padding: 0.9rem 1.2rem;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+aside {
   display: flex;
   flex-direction: column;
-  align-self: auto;
-}
-
-.bienvenida {
-  text-align: center;
-  font-size: 2.5rem;
-  padding: 2rem;
-  border: solid 0.5rem lightsalmon;
-  border-radius: 2rem;
-}
-
-.sugerencias {
-  font-size: 0.7rem;
+  justify-content: space-evenly;
   background-color: chocolate;
   color: whitesmoke;
   padding: 1rem;
-  border: solid 0.3rem lightsalmon;
-  border-radius: 0.5rem;
-  float: right;
-  width: 17%;
   float: right;
 }
-.sugerencias img {
-  width: 50%;
-  height: auto;
+aside img {
+  max-width: 50px;
 }
 
 footer {
-  background-color: chocolate;
-  text-align: center;
+  background-color: saddlebrown;
+  color: whitesmoke;
   padding: 1rem;
-  border: solid 0.5rem lightsalmon;
-  border-radius: 0.5rem;
+}
+
+/* Clases */
+
+.bake {
+  margin-bottom: 50px;
+}
+
+.bake-contenido {
+}
+
+/* Clases contenedoras */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar ul li a:hover {
+  color: darkred;
+}
+
+.containersm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Clases de textos */
+
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
 }
