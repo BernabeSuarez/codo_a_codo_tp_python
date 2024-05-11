@@ -9,6 +9,7 @@
 
 main {
   display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
   color: black;
 }
 
-.encabezado {
+header {
   background-color: saddlebrown;
 }
 .logo img {
@@ -27,11 +28,15 @@ body {
 }
 
 .titulo {
+  flex-direction: row;
+  justify-content: center;
   font-size: 2.5rem;
   color: whitesmoke;
-  text-align: center;
 }
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: rgb(227, 99, 8);
   padding: 1rem;
   border: solid 0.5rem lightsalmon;
@@ -47,13 +52,13 @@ nav ul li a {
   font-size: 1rem;
   text-align: right;
   text-decoration: none;
+  padding: 1rem;
 }
+
 article {
-  flex: 1;
-}
-section {
-  flex: 1;
-  order: initial;
+  display: flex;
+  flex-direction: column;
+  align-self: auto;
 }
 
 .bienvenida {
@@ -72,7 +77,8 @@ section {
   border: solid 0.3rem lightsalmon;
   border-radius: 0.5rem;
   float: right;
-  width: 25%;
+  width: 17%;
+  float: right;
 }
 .sugerencias img {
   width: 50%;
