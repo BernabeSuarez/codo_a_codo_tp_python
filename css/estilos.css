@@ -193,35 +193,36 @@ footer {
   padding: 1.3rem;
 }
 
-.productos .pasteleria-grupo-encabezado {
+.pasteleria-grupo-encabezado {
   padding: 5px 0 5px;
   margin-top: 20px;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-.productos .pasteleria-grupo-cuerpo a {
+.pasteleria-grupo-cuerpo a {
   color: chocolate;
 }
 
-.productos .pasteleria-grupo-encabezado i {
+.pasteleria-grupo-encabezado i {
   font-size: 1.3rem;
   font-weight: bolder;
   color: chocolate;
   cursor: pointer;
 }
 
-.productos .pasteleria-grupo-cuerpo {
+.pasteleria-grupo-cuerpo {
   display: none;
   font-style: italic;
   text-align: justify;
   line-height: 1.5;
+  margin-top: 10px;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 1rem;
 }
 
-.productos .pasteleria-grupo-cuerpo.open {
+.pasteleria-grupo-cuerpo.open {
   display: block;
 }
 
