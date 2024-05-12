@@ -192,6 +192,9 @@ footer {
 }
 
 .productos .pasteleria p:last-child {
+  font-style: italic;
+  text-align: justify;
+  line-height: 1.5;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 1rem;
