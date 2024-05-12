@@ -96,7 +96,7 @@ img {
 }
 
 aside img {
-  max-width: 100px;
+  max-width: 200px;
 }
 
 aside img {
@@ -153,8 +153,17 @@ footer {
   padding: 0 1rem;
 }
 
-.navbar ul li a:hover {
-  color: darkred;
+.navbar ul li a:hover:after {
+  width: 100%;
+  color: rgb(255, 197, 6);
+}
+.navbar ul li a:after {
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 rgb(255, 197, 6);
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
 }
 
 .containersm {
