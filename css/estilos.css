@@ -323,3 +323,58 @@ footer {
 .text-center {
   text-align: center;
 }
+
+/* Contacto */
+
+.contacto_container {
+  display: flex;
+  min-height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+.contact_form {
+  width: 550px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  background-color: saddlebrown;
+  border-radius: 20px;
+}
+.contact_input_container {
+  width: 100%;
+  display: flex;
+}
+
+.contact_input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  padding: 3%;
+}
+
+.contact_textarea {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  padding: 3%;
+}
+
+.contact_button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  padding: 3%;
+  background-color: rgb(255, 197, 6);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+}
+.contact_button:hover {
+  background-color: chocolate;
+  color: #fafafa;
+  border: 2px solid rgb(255, 197, 6);
+}
