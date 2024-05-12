@@ -63,17 +63,44 @@ img {
   transition: 0.5s;
 }
 
-aside {
+.bake {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1rem solid chocolate;
+  background-color: mintcream;
+  color: black;
+}
+
+.bake-contenido img {
+  max-width: 500px;
+  padding: 0%;
+  border-radius: 0.5rem;
+}
+
+.bake-lado {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-left: auto;
+  border: 1rem solid chocolate;
+  border-radius: 1rem;
+  width: 10%;
+  height: auto;
   background-color: chocolate;
   color: whitesmoke;
-  padding: 1rem;
-  float: right;
 }
+
 aside img {
-  max-width: 50px;
+  max-width: 100px;
+}
+
+aside img {
+  max-width: 100px;
 }
 
 footer {
@@ -82,13 +109,41 @@ footer {
   padding: 1rem;
 }
 
-/* Clases */
+/* Video */
 
-.bake {
-  margin-bottom: 50px;
+.video-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: mintcream;
+  color: black;
 }
 
-.bake-contenido {
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+  margin: 20px;
+  border: 0.6rem solid rgba(139, 69, 19, 0.361);
+  border-radius: 0.5rem;
+  background-color: chocolate;
+  color: whitesmoke;
+  width: 60%;
+}
+
+.video-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin: auto;
+  margin-top: 15px;
 }
 
 /* Clases contenedoras */
