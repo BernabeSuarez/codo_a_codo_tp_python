@@ -74,6 +74,10 @@ img {
   color: black;
 }
 
+.bake-contenido {
+  padding: 2rem 0;
+}
+
 .bake-contenido img {
   max-width: 500px;
   padding: 0%;
@@ -85,11 +89,11 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   margin-left: auto;
   border: 1rem solid chocolate;
   border-radius: 1rem;
-  width: 10%;
+  width: 15%;
   height: auto;
   background-color: chocolate;
   color: whitesmoke;
@@ -150,7 +154,7 @@ footer {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .navbar ul li a:hover:after {
