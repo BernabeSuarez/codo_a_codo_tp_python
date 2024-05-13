@@ -268,31 +268,9 @@
       </p>
     </div>
   </footer>
-  <script>
-    // Obtener todas las tarjetas y descripciones
-    const cards = document.querySelectorAll('.card');
-    const descriptions = document.querySelectorAll('.pasteleria-grupo-cuerpo');
 
-    // Agregar evento click a cada tarjeta
-    cards.forEach((card, index) => {
-      card.addEventListener('click', () => {
-        // Verificar si la descripción está visible
-        const isVisible = descriptions[index].style.display === 'block';
-
-        // Ocultar todas las descripciones
-        descriptions.forEach((desc) => {
-          desc.style.display = 'none';
-        });
-
-        // Si la descripción no estaba visible, mostrarla
-        if (!isVisible) {
-          descriptions[index].style.display = 'block';
-        }
-      });
-    });
   </script>
-  </script>
-  <!-- <script src="./js/main.js"></script> -->
+  <script src="./js/main.js"></script>
   <script>
     const anio = new Date().getFullYear();
     document.querySelector(".anio").innerHTML = anio;
