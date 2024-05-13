@@ -190,11 +190,11 @@ footer {
 }
 
 .productos img {
-  width: 200px;
+  width: 70%;
   height: 150px;
   border-radius: 0.5rem;
   padding: 0;
-  margin: 20px;
+  margin: 2rem;
   box-shadow: chocolate 0.2rem 0.2rem 0.2rem;
 }
 
