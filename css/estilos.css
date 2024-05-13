@@ -191,6 +191,8 @@ footer {
   color: black;
   border-radius: 0.5rem;
   padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .pasteleria-grupo-encabezado {
@@ -325,7 +327,7 @@ footer {
 
 .contacto_container {
   display: flex;
-  min-height: 70vh;
+  min-height: 90vh;
   justify-content: center;
   align-items: center;
 }
@@ -374,4 +376,15 @@ footer {
   background-color: chocolate;
   color: #fafafa;
   border: 2px solid rgb(255, 197, 6);
+}
+
+.check_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.check_label {
+  color: #fafafa;
+  margin-right: 5%;
 }

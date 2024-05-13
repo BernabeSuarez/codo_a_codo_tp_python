@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!groupHeader) return;
 
     const group = groupHeader.parentElement;
-    const groupBody = group.querySelector(".pasteleria-grupo-cuerpo");
+    const groupBody = group.querySelectorAll(".pasteleria-grupo-cuerpo");
     const icon = groupHeader.querySelector("i");
 
     // Transicion Icono
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const otrosGrupos = pasteleriaContainer.querySelector(".pasteleria-grupo");
 
-    otrosGrupos.forEach((otroGrupo) => {});
+    otrosGrupos.forEach((otroGrupo) => { });
     if (otroGrupo !== group) {
       const otroGrupoCuerpo = otroGrupo.querySelector(
         ".pasteleria-grupo-cuerpo"
@@ -36,3 +36,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+//form validation
+
+const email = document.getElementById("email");
+const nombre = document.getElementById("name");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.valid) {
+    email.style.border = "3px solid green";
+  } else {
+    email.style.border = "3px solid red";
+  }
+});
+
+nombre.addEventListener("input", function (event) {
+  if (nombre.validity.valid) {
+    nombre.style.border = "3px solid green";
+  } else {
+    nombre.style.border = "3px solid red";
+  }
+})

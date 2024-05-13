@@ -46,13 +46,28 @@
     <div class="contact_form">
       <form action="">
         <div class="contact_input_container">
-          <input class="contact_input" type="text" placeholder="Nombre" required>
+          <input class="contact_input" type="text" id="name" placeholder="Nombre" required>
         </div>
         <div class="contact_input_container">
-          <input class="contact_input" type="email" placeholder="Email" required>
+          <input class="contact_input" type="email" id="email" placeholder="Email" required>
         </div>
         <div class="contact_input_container">
-          <textarea class="contact_textarea" name="" id="" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+          <input class="contact_input" type="text" id="tel" placeholder="Telefono (opcional)">
+        </div>
+        <div class="contact_input_container">
+          <select name="" id="consulta" class="contact_input" id="">
+            <option value="" disabled selected>Motivo de consulta</option>
+            <option value="pedidos_especiales">Pedidos especiales</option>
+            <option value="encargues">Encargues</option>
+          </select>
+        </div>
+        <div class="contact_input_container check_container">
+          <label for="file" class="check_label">Subi tu imagen </label>
+          <input class="contact_input check_label" name="file" type="file">
+        </div>
+        <div class="contact_input_container check_container">
+          <label for="check" class="check_label">Acepta recibir noticias?</label>
+          <input type="checkbox" name="check" id="news">
         </div>
 
         <div class="contact_input_container">
