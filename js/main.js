@@ -37,6 +37,12 @@
 //   });
 // });
 
+//loader
+const loader = document.getElementById("loader");
+
+setTimeout(() => {
+  loader.style.display = "none";
+}, 5000)
 
 // Obtener todas las tarjetas y descripciones
 const cards = document.querySelectorAll('.card');
