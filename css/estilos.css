@@ -28,6 +28,11 @@ img {
   max-width: 100%;
 }
 
+.icon_menu {
+  filter: invert(100%);
+  display: none;
+}
+
 .navbar {
   background-color: saddlebrown;
   padding: 1.5rem;
@@ -83,9 +88,9 @@ img {
 }
 
 .bake {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
   border: 1rem solid rgb(255, 197, 6);
@@ -94,14 +99,9 @@ img {
 }
 
 .bake-contenido {
-  padding: 2rem 0;
-}
-
-.bake .bake-contenido p {
   text-align: center;
-  padding: 30px 0 30px;
-  margin-top: 20px 0 20px;
-  font-size: 1.2rem;
+  padding: 30px 0;
+  margin: 20px 0;
 }
 
 .bake-contenido img {
@@ -109,6 +109,7 @@ img {
   height: 315px;
   padding: 0%;
   border-radius: 0.5rem;
+  margin-bottom: 5%;
 }
 
 .bake-lado {
@@ -124,6 +125,16 @@ img {
   height: auto;
   background-color: chocolate;
   color: whitesmoke;
+}
+.bake-subtitulo {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+.bake-text {
+  text-align: center;
 }
 
 aside img {
@@ -147,7 +158,6 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem;
   margin: 1rem;
   background-color: mintcream;
   color: black;
@@ -159,8 +169,7 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 40px;
-  margin: 20px;
+
   border: 0.6rem solid rgba(139, 69, 19, 0.361);
   border-radius: 0.5rem;
   background-color: chocolate;
@@ -405,4 +414,61 @@ footer {
 .check_label {
   color: #fafafa;
   margin-right: 5%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .icon_menu {
+    display: block;
+  }
+  .titulo {
+    display: none;
+  }
+  .menu-principal {
+    display: none;
+  }
+  .bake {
+    display: block;
+  }
+  .bake-contenido {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bake-contenido img {
+    width: 100%;
+    height: auto;
+  }
+  .bake-text {
+    width: 80%;
+  }
+  .bake-subtitulo {
+    font-size: 1.8rem;
+  }
+  .bake-lado {
+    display: none;
+  }
+
+  .video-container {
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+  }
+  .video-contenido {
+    width: 100%;
+    height: auto;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
