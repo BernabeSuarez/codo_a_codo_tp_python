@@ -33,7 +33,7 @@
         <div class="titulo">
           <h1>La Bakerya</h1>
         </div>
-        <div class="icon_menu">
+        <div class="icon_menu" id="hambMenu">
           <img src="./img/menu-icon.png" alt="hamburguer menu">
         </div>
         <div class="menu-principal">
@@ -46,6 +46,14 @@
         </div>
       </div>
     </nav>
+    <div class="menu-hamburguesa" id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nosotro.html">Nosotros</a></li>
+        <li><a href="productos.html">Nuestros Productos</a></li>
+        <li><a href="contacto.html">Contactanos</a></li>
+      </ul>
+    </div>
   </header>
 
   <!-- Bake Seccion Main -->
@@ -89,29 +97,28 @@
       </div>
     </div>
     <!-- Seccion Aside -->
-    <section class="bake-lado">
-      <aside>
-        <div class="container">
-          <div>
-            <img src="./img/sintacc.png" alt="libre de TACC" />
-          </div>
-          <h3 class="bake-text text-lg">¡Libre de TACC!</h3>
-          <div>
-            <p class="bake-text text-sm">
-              En La Bakerya, nos enorgullece ofrecer una amplia variedad de
-              productos de panadería que son aptos para celiacos. Entendemos
-              la importancia de proporcionar opciones seguras y deliciosas
-              para aquellos que siguen una dieta libre de gluten.
-              <br />
-              ¡Ven y descubre nuestra deliciosa selección de productos libres
-              de TACC hoy mismo!
-            </p>
-          </div>
-        </div>
-      </aside>
-    </section>
-  </section>
+    <aside class="bake-lado">
 
+
+
+      <img src="./img/sintacc.png" alt="libre de TACC" />
+
+      <h3 class="bake-text text-lg">¡Libre de TACC!</h3>
+
+      <p class="bake-text text-sm">
+        En La Bakerya, nos enorgullece ofrecer una amplia variedad de
+        productos de panadería que son aptos para celiacos. Entendemos
+        la importancia de proporcionar opciones seguras y deliciosas
+        para aquellos que siguen una dieta libre de gluten.
+        <br />
+        ¡Ven y descubre nuestra deliciosa selección de productos libres
+        de TACC hoy mismo!
+      </p>
+
+
+    </aside>
+
+  </section>
   <footer class="footer">
 
     <p class="bake-text text-sm text-center">
@@ -120,7 +127,14 @@
     </p>
 
   </footer>
-
+  <script>
+    //mostrar menu
+    const btnMenu = document.querySelector(".icon_menu")
+    const menu = document.getElementById("nav-menu")
+    btnMenu.addEventListener("click", () => {
+      menu.classList.toggle("active")
+    })
+  </script>
   <script src="./js/main.js"></script>
   <script>
     const anio = new Date().getFullYear();

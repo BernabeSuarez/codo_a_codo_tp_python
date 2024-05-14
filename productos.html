@@ -25,13 +25,16 @@
   <header>
     <nav class="navbar">
       <div class="container">
-        <div class="logo">
+        <div class="logo tracking-in-contract-bck">
           <a href="./index.html">
             <img src="./img/logo.png" alt="logo" />
           </a>
         </div>
         <div class="titulo">
           <h1>La Bakerya</h1>
+        </div>
+        <div class="icon_menu" id="hambMenu">
+          <img src="./img/menu-icon.png" alt="hamburguer menu">
         </div>
         <div class="menu-principal">
           <ul>
@@ -43,6 +46,14 @@
         </div>
       </div>
     </nav>
+    <div class="menu-hamburguesa" id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nosotro.html">Nosotros</a></li>
+        <li><a href="productos.html">Nuestros Productos</a></li>
+        <li><a href="contacto.html">Contactanos</a></li>
+      </ul>
+    </div>
   </header>
   <!-- Seccion Productos -->
   <section class="productos">
@@ -64,7 +75,14 @@
       </p>
     </div>
   </footer>
-
+  <script>
+    //mostrar menu
+    const btnMenu = document.querySelector(".icon_menu")
+    const menu = document.getElementById("nav-menu")
+    btnMenu.addEventListener("click", () => {
+      menu.classList.toggle("active")
+    })
+  </script>
 
   <script src="./js/main.js"></script>
   <script src="./js/products.js"></script>
