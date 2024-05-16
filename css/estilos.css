@@ -442,6 +442,30 @@ footer {
   align-items: center;
 }
 
+/* Informacion del footer */
+.seguinos {
+  font-size: 18px; 
+  font-weight: bold; 
+}
+
+.social-icon:hover {
+transform: scale(1.5); 
+}
+
+.social-icon1 {
+margin-right: 5px
+}
+
+hr {
+border: none;
+border-top: 2px solid whitesmoke; 
+margin: 20px 0;
+}
+
+.derechos {
+text-align: left
+}
+
 @media screen and (max-width: 768px) {
   .icon_menu {
     display: block;
